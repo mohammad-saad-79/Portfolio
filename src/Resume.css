@@ -1,0 +1,164 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--text-dark);
+}
+
+.resume .resume-container {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 25px 10px 25px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.resume-container button {
+    width: fit-content;
+    height: 40px;
+    transition: all 0.3s ease;
+    align-self: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resume-container button:hover {
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent);
+    border-top: 3px solid var(--accent);
+    color: var(--accent);
+    transition: all 0.1s ease;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--primary-bg);
+}
+
+button a:hover {
+    text-decoration: none;
+    color: var(--accent);
+    transition: all 0.1s ease;
+}
+
+.resume-container .card {
+    height: fit-content;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.resume-container .card .card-title {
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.resume-container .card .card-info {
+    padding-left: 95px;
+}
+
+.resume-container .card-info h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: -54px;
+    font-weight: 700;
+}
+
+.resume-container .card-info p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+.resume-container .card-info span {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.resume-container .card-info a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.resume-container .icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.resume-container .icon-box i {
+    font-size: 20px;
+}
+
+.card ul {
+    margin-top: 0;
+    margin-left: 75px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-top: 5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 20px 15px 10px 15px;
+    }
+
+    .resume-container .card .card-info {
+        padding-left: 15px;
+    }
+
+    .resume-container .card-info h3 {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .resume-container .card-info p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .card ul {
+        margin-left: 20px;
+    }
+
+    .resume-container .card .card-title {
+        padding-left: 15px;
+        gap: 10px;
+    }
+
+    .resume-container .icon-box {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+    }
+
+    .resume-container .icon-box i {
+        font-size: 18px;
+    }
+}

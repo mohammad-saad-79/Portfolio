@@ -1,0 +1,17 @@
+.Viewbar {
+  background-color: var(--primary-color);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  min-height: 70vh;
+}
+
+@media (max-width: 768px) {
+  .Viewbar {
+    padding: 10px 8px;
+    min-height: 50vh;
+  }
+}

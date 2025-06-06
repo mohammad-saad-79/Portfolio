@@ -1,0 +1,5 @@
+.ViewbarContainer {
+    border-radius: var(--radius);
+    margin-top: 5px;
+    color: var(--primary-color);
+}

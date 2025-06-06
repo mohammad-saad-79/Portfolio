@@ -1,0 +1,6 @@
+.about {
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

@@ -1,0 +1,24 @@
+.skills {
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Media Query for phone/tablet */
+@media (max-width: 768px) {
+    .professional-skills {
+        justify-content: center;
+        padding: 5px 10px;
+    }
+    .circle-box {
+        width: 80px;
+    }
+    .skills-circle1,
+    .skills-circle2,
+    .skills-circle3,
+    .skills-circle4 {
+        width: 50px;
+        height: 50px;
+    }
+}

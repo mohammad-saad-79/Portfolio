@@ -1,0 +1,64 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: var(--primary-bg);
+  border-radius: 20px 20px 0 0;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+
+.Navbar h2 {
+  margin: 0;
+  color: var(--text-dark);
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+nav button {
+  background: var(--primary-bg);
+  border: none;
+  color: var(--text-dark);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+nav button.active {
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+nav button:hover:not(.active) {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  nav button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

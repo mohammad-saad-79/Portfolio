@@ -1,0 +1,143 @@
+.skill-extra {
+    width: 100%;
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    box-sizing: border-box;
+
+    width: 100%;
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.skill-extra .skill-card {
+    width: 37%;
+    min-width: 250px;
+    height: fit-content;
+    border: 1px solid var(--border);
+    border-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.skill-extra h3 {
+    border-bottom: 2px solid var(--text-dark);
+    color: var(--text-dark);
+}
+
+.professional-skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px 30px;
+}
+
+.circle-box {
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-dark);
+}
+
+.circle-box span {
+    font-size: 14px;
+}
+
+.skills-circle1,
+.skills-circle2,
+.skills-circle3,
+.skills-circle4 {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(closest-side, var(--primary-bg) 85%, transparent 90%);
+}
+
+.skills-circle1 {
+    background-image: 
+      radial-gradient(closest-side, var(--primary-bg) 85%, transparent 90%), 
+      conic-gradient(var(--accent) 90%, var(--text-light) 0);
+}
+.skills-circle2 {
+    background-image: 
+      radial-gradient(closest-side, var(--primary-bg) 85%, transparent 90%), 
+      conic-gradient(var(--accent) 75%, var(--text-light) 0);
+}
+.skills-circle3 {
+    background-image: 
+      radial-gradient(closest-side, var(--primary-bg) 85%, transparent 90%), 
+      conic-gradient(var(--accent) 70%, var(--text-light) 0);
+}
+.skills-circle4 {
+    background-image: 
+      radial-gradient(closest-side, var(--primary-bg) 85%, transparent 90%), 
+      conic-gradient(var(--accent) 80%, var(--text-light) 0);
+}
+
+.tool-card {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-dark);
+}
+
+.tool-card .card {
+    height: fit-content;
+    border-bottom: 1px solid var(--border);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card .card-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 10px;
+    padding: 10px 0 0 30px;
+}
+
+.card-title i {
+    font-size: 22px;
+    color: var(--accent);
+}
+
+.tool-card .card-info {
+    text-align: left;
+    padding-left: 65px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .skill-extra {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .skill-extra .skill-card {
+        width: 100%;
+        margin-top: 0;
+    }
+}

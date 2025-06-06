@@ -1,0 +1,18 @@
+.Sidebar {
+  background-color: var(--primary-bg);
+  padding: 1.5rem 1rem;
+  width: 290px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+  }
+}

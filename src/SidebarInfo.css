@@ -1,0 +1,121 @@
+.SidebarInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+}
+
+.info-box:hover {
+  transform: scale(1.02);
+  background-color: var(--primary-color);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  margin-right: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-dark);
+  word-break: break-word;
+}
+
+.info h4 {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  color: var(--text-dark);
+  word-break: break-word;
+}
+
+.link-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.link-box i {
+  font-size: 24px;
+  color: var(--accent);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.link-box i:hover {
+  color: var(--text-dark);
+  font-size: 26px;
+}
+
+/* Responsive styles for SidebarInfo */
+@media (max-width: 768px) {
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .icon {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .info {
+    flex: unset;
+    width: 100%;
+  }
+
+  .info p,
+  .info h4 {
+    font-size: 16px;
+  }
+
+  .link-box {
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .link-box i {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info p,
+  .info h4 {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}

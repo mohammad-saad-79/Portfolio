@@ -1,0 +1,122 @@
+.skill-technical {
+    height: fit-content;
+    background-color: var(--primary-bg);
+    border-radius: 20px;
+    padding: 0.5px 25px 0.5px 25px;
+    margin-top: 20px;
+    border: 1px solid var(--border);
+}
+
+.skill-technical h2 {
+    text-decoration: underline;
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-left: 15px;
+}
+
+.skill-technical .skill-card {
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid var(--border);
+    border-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress {
+    width: 32%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+
+.skill-progress span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.skill-progress .progress {
+    height: fit-content;
+    border: 1px solid var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.progress .html {
+    width: 90%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .css {
+    width: 85%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .js {
+    width: 65%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .react {
+    width: 75%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .java {
+    width: 55%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .py {
+    width: 75%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .c{
+    width: 60%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .cpp {
+    width: 80%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+.progress .bar {
+    width: 90%;
+    height: 5px;
+    background-color: var(--accent);
+    border-radius: 10px;
+}
+
+/* Media Query for phone/tablet */
+@media (max-width: 768px) {
+    .skill-technical .skill-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .skill-progress {
+        width: 90%;
+        min-width: auto;
+    }
+}
